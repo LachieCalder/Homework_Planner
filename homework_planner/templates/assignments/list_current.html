@@ -1,4 +1,7 @@
+{% extends 'base_html.html' %}
+{% block content %}
 {% for assignment in assignment_list %}
 	<h3>{{ assignment.description }}</h3>
 	<h4>{{ assignment.subject }}</h4>
 {% endfor %}
+{% endblock %}
